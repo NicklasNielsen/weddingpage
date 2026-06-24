@@ -105,3 +105,16 @@ footer {
     padding: 22px 20px;
   }
 }
+
+.iframe-wrapper {
+  width: 100%;
+  height: 1349px;
+  overflow: visible; /* let it grow naturally */
+  position: relative;
+}
+
+.iframe-wrapper iframe {
+  width: 100%;
+  height: 1349px; /* match wrapper */
+  border: none;
+}

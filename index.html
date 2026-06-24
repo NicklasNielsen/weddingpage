@@ -43,9 +43,18 @@
       <section class="card" id="registry">
         <h2>Ønskeliste</h2>
         <p>Her kan du finde inspiration til gaver:</p>
-        <p><a href="https://onskeskyen.dk/da/wishlists/6gqmWlzeLbOP5fCt" class="button">Ønske sky</a></p>
+          <div class="iframe-wrapper">
+            <iframe src="https://onskeskyen.dk/da/wishlists/6gqmWlzeLbOP5fCt"></iframe>
+          </div>
+        </p>
       </section>
     </main>
   </div>
+  <script>
+      document.querySelector('.iframe-overlay').addEventListener('wheel', function(e) {
+        e.preventDefault();
+        document.querySelector('iframe').contentWindow.scrollBy(0, e.deltaY);
+      }, { passive: false });
+  </script>
 </body>
 </html>
